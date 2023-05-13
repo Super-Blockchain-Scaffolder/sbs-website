@@ -1,23 +1,50 @@
-# Vite + React 18 + TS + TailwindCSS + ESLint
+# Blockchain Super Scaffolder Website
 
-This is a starter template for React (TypeScript) using Vite. I've also added TailwindCSS so you can style your app without writing CSS code, and ESLint to analyze your code and suggest some optimizations.
+The source code of the marking website
 
-You can find more about these technologies in the following links: [Vite](https://vitejs.dev/), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/), [Eslint](https://eslint.org/).
+<br/>
 
-## How to install
+## Prod Link
 
-Just run the next command in a terminal (make sure that you have installed NPM).
+This code is currently hosted at: https://[TODO: insert proper url here]
 
+<br/>
+
+## Contributing
+
+See something in this website that seems off? Feel free to open issues and / or pull requests with any questions or feedback!
+
+<br/>
+
+## Local Development
+
+0) Clone this repo
 ```
-npx degit dserranoc/vite-reactts18-eslint-tailwindcss project-name
+git clone git@github.com:Blockchain-Super-Scaffolder/bss-website.git
 ```
 
-## How to start
-
-After the installation of the dependencies run:
-
+1) Run the app locally
 ```
-npm run dev
+yarn dev
 ```
 
-Made with ❤️ by Daniel Serrano Cobos
+2) Run tests
+```
+yarn test
+```
+
+<br/>
+
+## Scaffolded From The "Vite + React 18 + TS + TailwindCSS + ESLint" Starter
+
+Shoutout to Daniel Serrano Cobos for making this cool React starter which we built our site from! 👍
+
+You can find more about these technologies in the following links: 
+
+- [Vite + React 18 + TS + TailwindCSS + ESLint Starter]()
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Eslint](https://eslint.org/).
+

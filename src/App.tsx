@@ -1,43 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
-function App () {
-  const [count, setCount] = useState(0)
+import { Route, Routes } from 'react-router-dom'
+import Home from './views/Home/Home'
+import Install from './views/Install/Install'
+import Search from './views/Search/Search'
+import NavBar from './components/navbar/Navbar'
+import Scaffold from './views/Scaffold/Scaffold'
+import Contribute from './views/Contribute/Contribute'
 
-  return (
-    <div className="App">
-      <div className='flex justify-center items-center'>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-          <img src="/typescript.svg" className="logo react" alt="TypeScript logo" />
-        </a>
-        <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-          <img src="/tailwindcss.svg" className="logo" alt="TailwindCSS logo" />
-        </a>
-        <a href="https://eslint.org/" target="_blank" rel="noreferrer">
-          <img src="/eslint.svg" className="logo" alt="ESLint logo" />
-        </a>
-      </div>
-      <h1>Blockchain Super Scaffolder</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the logos to learn more
-      </p>
-    </div>
-  )
+function App () {
+    return (
+        <>
+
+            <NavBar />
+            <div className="App">
+
+                {/* React Router Stuff */}
+
+                <br/>
+                <br/>
+                <br/>
+
+                <Routes>
+                    <Route path='/contribute' Component={Contribute} />
+                    <Route path='/scaffold' Component={Scaffold} />
+                    <Route path='/install' Component={Install} />
+                    <Route path='/search' Component={Search} />
+                    <Route path='/' Component={Home} />
+                </Routes>
+
+            </div>
+        </>
+    )
 }
 
 export default App

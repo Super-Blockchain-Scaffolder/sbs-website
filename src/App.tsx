@@ -18,8 +18,6 @@ function App () {
                 {/* React Router Stuff */}
 
                 <br/>
-                <br/>
-                <br/>
 
                 <Routes>
                     <Route path='/contribute' Component={Contribute} />

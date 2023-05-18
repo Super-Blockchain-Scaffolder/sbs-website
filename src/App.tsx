@@ -7,6 +7,7 @@ import Search from './views/Search/Search'
 import NavBar from './components/navbar/Navbar'
 import Scaffold from './views/Scaffold/Scaffold'
 import Contribute from './views/Contribute/Contribute'
+import Footer from './components/footer/Footer'
 
 function App () {
     return (
@@ -26,6 +27,8 @@ function App () {
                     <Route path='/search' Component={Search} />
                     <Route path='/' Component={Home} />
                 </Routes>
+
+                <Footer/>
 
             </div>
         </>

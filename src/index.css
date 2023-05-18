@@ -77,3 +77,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.one-line-install {
+  padding: 0.5em 1em;
+  background: #bfe6ed;
+  border-radius: 0.35em;
+  color: #1b1c1c;
+}

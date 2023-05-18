@@ -10,10 +10,10 @@ const NavBar = () => {
                 <Link to="/">Blockchain Super Scaffolder</Link>
             </h5>
             <ul className='nav-links'>
-                <li><Link to="/Install">Install</Link></li>
-                <li><Link to="/Search">Search</Link></li>
-                <li><Link to="/Scaffold">Scaffold</Link></li>
-                <li><Link to="/Contribute">Contribute</Link></li>
+                <li><Link to="/install">Install</Link></li>
+                <li><Link to="/search">Search</Link></li>
+                <li><Link to="/scaffold">Scaffold</Link></li>
+                <li><Link to="/contribute">Contribute</Link></li>
             </ul>
         </div>
     )

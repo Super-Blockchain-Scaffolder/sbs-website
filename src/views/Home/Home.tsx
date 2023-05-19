@@ -41,7 +41,7 @@ const Home = () => {
 
             <br />
 
-            <p className="text-xl p-2"><Link to="/install">Install</Link> the bss cli, <Link to="/search">find</Link> a starter project for you, <Link to="/scaffold">scaffold</Link> it out, and start developing!</p>
+            <p className="text-xl p-2"><Link to="/install">Install</Link> the sbs cli, <Link to="/search">find</Link> a starter project for you, <Link to="/scaffold">scaffold</Link> it out, and start developing!</p>
 
             <br />
 
@@ -51,7 +51,7 @@ const Home = () => {
                 </h2>
 
                 <pre className="one-line-install max-w-fit m-auto">
-                    npm i -g bss
+                    npm i -g sbs
                 </pre>
 
             </div>

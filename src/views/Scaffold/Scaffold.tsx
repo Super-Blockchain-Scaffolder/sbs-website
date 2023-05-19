@@ -89,7 +89,7 @@ const Scaffold = () => {
                     Scaffolding - Interactive Mode
                 </h1>
                 <p className="my-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    Simply run the bss command without any command line arguments or flags to run it in interactive mode.
+                    Simply run the sbs command without any command line arguments or flags to run it in interactive mode.
                 </p>
                 <pre className="my-4 one-line-install max-w-fit m-auto">
                     sbs

@@ -11,7 +11,7 @@ const Search = () => {
 
         console.log('STARTUP')
 
-        fetch("https://raw.githubusercontent.com/Blockchain-Super-Scaffolder/bss-master-list/main/bss-master-list.yaml")
+        fetch("https://raw.githubusercontent.com/Super-Blockchain-Scaffolder/sbs-master-list/main/sbs-master-list.yaml")
             .then(response => response.text())
             // 4. Setting *dogImage* to the image url that we received from the response above
 
@@ -39,7 +39,7 @@ const Search = () => {
                     Search
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    Explore the various Super Blockchain Scaffolder starters here or <Link to="/contribute">create your own</Link>!
+                    Explore the various Blockchain Super Scaffolder starters here or <Link to="/contribute">create your own</Link>!
                 </p>
             </div>
 

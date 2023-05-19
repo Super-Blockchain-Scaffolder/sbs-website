@@ -1,12 +1,6 @@
 # Blockchain Super Scaffolder Website
 
-The source code of the marking website
-
-<br/>
-
-## Prod Link
-
-This code is currently hosted at: https://[TODO: insert proper url here]
+The source code of the sbs-cli website: sbs-cli.org
 
 <br/>
 
@@ -18,18 +12,31 @@ See something in this website that seems off? Feel free to open issues and / or 
 
 ## Local Development
 
-0) Clone this repo
-```
-git clone git@github.com:Blockchain-Super-Scaffolder/bss-website.git
+<br/>
+
+### 0) Clone this repo
+```sh
+git clone git@github.com:Blockchain-Super-Scaffolder/sbs-website.git
 ```
 
-1) Run the app locally
+<br/>
+
+### 1) Use Correct Node Version
+We recommend all using the same version by using [nvm](https://github.com/nvm-sh/nvm) to read from the .nvmrc file and switch to the proper node version:
+```sh
+nvm use
 ```
+
+<br/>
+
+### 2) Run the app locally
+```sh
 yarn dev
 ```
+<br/>
 
-2) Run tests
-```
+### 3) Run tests
+```sh
 yarn test
 ```
 

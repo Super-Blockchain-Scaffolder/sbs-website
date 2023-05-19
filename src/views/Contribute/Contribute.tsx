@@ -40,7 +40,7 @@ const Contribute = () => {
                     Add A New Starter
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    The "master list" of starters lives <a href="https://github.com/Blockchain-Super-Scaffolder/bss-master-list">its own special repository</a>, and the data describing each starter is held within the file named <a href="https://github.com/Blockchain-Super-Scaffolder/bss-master-list/blob/main/bss-master-list.yaml">bss-master-list.yaml</a> file.
+                    The "master list" of starters lives <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-master-list">its own special repository</a>, and the data describing each starter is held within the file named <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-master-list/blob/main/sbs-master-list.yaml">sbs-master-list.yaml</a> file.
                 </p>
                 <br />
                 <h1 className="mb-5 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -72,7 +72,7 @@ const Contribute = () => {
                     Step 3) Open A Pull Request
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    Once you've commited your changes to the bss-master-list.yaml file in your fork you'll want to <a href="https://github.com/Blockchain-Super-Scaffolder/bss-master-list/compare">open a pull request</a> across forks in the <a href="https://github.com/Blockchain-Super-Scaffolder/bss-master-list">bss-master-list repo</a>.
+                    Once you've commited your changes to the sbs-master-list.yaml file in your fork you'll want to <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-master-list/compare">open a pull request</a> across forks in the <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-master-list">sbs-master-list repo</a>.
                 </p>
 
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
@@ -80,7 +80,7 @@ const Contribute = () => {
                 </p>
 
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    When a member of the sbs core team approves your PR then your starter should be immediately available to be scaffolded! Users of the bss cli do <b>NOT</b> need to update their cli tool in order to see updated packages.
+                    When a member of the sbs core team approves your PR then your starter should be immediately available to be scaffolded! Users of the sbs cli do <b>NOT</b> need to update their cli tool in order to see updated packages.
                 </p>
 
                 <br />
@@ -106,7 +106,7 @@ const Contribute = () => {
                     Contribute To This Website
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    This website is completely open-source with source code hosted in the <a href="https://github.com/Blockchain-Super-Scaffolder/bss-website">sbs-website repository</a>.
+                    This website is completely open-source with source code hosted in the <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-website">sbs-website repository</a>.
                     {/* We love open-source! We value and appreciate all the feedback and help we can get so please don't be shy! */}
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
@@ -127,7 +127,7 @@ const Contribute = () => {
                     Contribute To The CLI Tool Source Code
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    The sbs cli tool is an open-source project built in Rust which lives in the <a href="https://github.com/Blockchain-Super-Scaffolder/bss-cli-tool">sbs-cli repository</a>.
+                    The sbs cli tool is an open-source project built in Rust which lives in the <a href="https://github.com/Blockchain-Super-Scaffolder/sbs-cli-tool">sbs-cli repository</a>.
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
                     We have a pretty clear roadmap for features we want to add to the sbs cli, but we are always open to new ideas!

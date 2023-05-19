@@ -2,7 +2,7 @@
 export default {
     "homeView": {
         "mainTitle": "Blockchain Super Scaffolder",
-        "blurbUnderMainTitle": "The blockchain super scaffolder is a free, easy-to-use command line tool for scaffolding loads of cool blockchain projects!",
+        "blurbUnderMainTitle": "The Blockchain Super Scaffolder is a free, easy-to-use command line tool for scaffolding loads of cool blockchain projects!",
         "secondSection": {
             "title": "The modern scaffolding tool for blockchain projects!",
             "description": ""
@@ -20,7 +20,7 @@ export default {
             "descriptionP2": "The Blockchain Super Scaffolder is language agnostic. It can scaffold projects of any programming language and any platform!",
             "descriptionP3": "The Blockchain Super Scaffolder works on MacOS, Windows, Linux, and embedded systems.",
         },
-        "useCasesTitle": "The Super Blockchain Scaffolder is great for:",
+        "useCasesTitle": "The Blockchain Super Scaffolder is great for:",
         "useCases": [
             { "useCase": "Rapidly create a new project." },
             { "useCase": "Creating modules or packages." },
@@ -46,11 +46,11 @@ export default {
     "scaffoldPage": {
         "topSection": {
             "title": "Scaffolding New Projects With SBS",
-            "descriptionP1": "Info on how to use the super blockchain scaffolder cli tool.",
+            "descriptionP1": "Info on how to use the Blockchain Super Scaffolder cli tool.",
         },
         "checkInstallationSection": {
             "title": "Check Installation",
-            "description": "Before continuing, please check that you have the bss cli tool installed. One simple way to do this by running it with the --version flag.",
+            "description": "Before continuing, please check that you have the sbs cli tool installed. One simple way to do this by running it with the --version flag.",
         },
     },
     "company": {

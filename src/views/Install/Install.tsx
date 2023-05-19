@@ -151,7 +151,7 @@ const Install = () => {
         // - Promote new projects by letting users get started with a sample app
         // - Etc, etc
 
-        // `bss` is the name of our command line utility allowing the creation of projects utilizing scaffolding templates (referred to as "starters").
+        // `sbs` is the name of our command line utility allowing the creation of projects utilizing scaffolding templates (referred to as "starters").
 
         // The "starters" are really just pointers to various repositories on github.
 

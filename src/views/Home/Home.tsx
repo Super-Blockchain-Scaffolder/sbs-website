@@ -10,11 +10,11 @@ const Home = () => {
 
     return (
         <>
-            <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-xl">
-                <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">
+                <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
                     {mainTitle}
                 </h1>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-3 font-normal text-gray-400">
                     {blurbUnderMainTitle}
                 </p>
 
@@ -22,8 +22,8 @@ const Home = () => {
 
             <br />
 
-            <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-xl">
-                <h1 className="mb-5 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">
+                <h1 className="mb-5 mt-2 text-2xl font-bold tracking-tight text-white">
                     {secondSection.title}
                 </h1>
                 <br />
@@ -33,7 +33,7 @@ const Home = () => {
                 <img src="scaffolding-people.png" className="m-auto" />
                 {/* <img src="react.svg" /> */}
                 {/* <img src="assets/react.svg" /> */}
-                {/* <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                {/* <p className="mb-3 font-normal text-gray-400">
                     {blurbUnderMainTitle}
                 </p> */}
 
@@ -45,8 +45,8 @@ const Home = () => {
 
             <br />
 
-            <div className="block text-left p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-xl">
-                <h2 className="mb-5 mt-2 text-center text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+            <div className="block text-left p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">
+                <h2 className="mb-5 mt-2 text-center text-xl font-bold tracking-tight text-white">
                     One-line install using <a href='https://npmjs.com'>npm</a>:
                 </h2>
 

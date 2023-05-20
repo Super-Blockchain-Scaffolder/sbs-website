@@ -11,7 +11,7 @@ const NavBar = () => {
             <div className='text-left'>
                 <Link to="/" className='inline-flex flex-row flex-start p-2 text-center md:text-left w-full'>
                     <img src="Super-SBS-Woman-0.5x.jpg" className='max-w-16 w-16 h-auto' />
-                    <h5 className='px-3 m-auto'>
+                    <h5 className='px-3 m-auto mr-12'>
                         Super Blockchain Scaffolder
                     </h5>
                 </Link>

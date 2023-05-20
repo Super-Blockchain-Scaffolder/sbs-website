@@ -18,8 +18,6 @@ function App () {
 
                 {/* React Router Stuff */}
 
-                <br/>
-
                 <Routes>
                     <Route path='/contribute' Component={Contribute} />
                     <Route path='/scaffold' Component={Scaffold} />

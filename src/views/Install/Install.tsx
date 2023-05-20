@@ -50,8 +50,8 @@ const Install = () => {
                 </h3>
 
                 <ul>
-                    {useCases.map(useCaseIterator => {
-                        return <li className="text-xl font-normal tracking-tight text-gray-900 dark:text-white">
+                    {useCases.map((useCaseIterator, index) => {
+                        return <li className="text-xl font-normal tracking-tight text-gray-900 dark:text-white" key={"use case " + index}>
                             - {useCaseIterator.useCase}
                         </li>
                     })}

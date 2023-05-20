@@ -2,7 +2,7 @@
 export default {
     "homeView": {
         "mainTitle": "Super Blockchain Scaffolder",
-        "blurbUnderMainTitle": "The Super Blockchain Scaffolder is a free, easy-to-use command line tool for scaffolding loads of cool blockchain projects!",
+        "blurbUnderMainTitle": "The Super Blockchain Scaffolder is an easy-to-use command line utility for scaffolding blockchain-related projects!",
         "secondSection": {
             "title": "The modern scaffolding tool for blockchain projects!",
             "description": ""
@@ -25,9 +25,9 @@ export default {
             { "useCase": "Rapidly create a new project." },
             { "useCase": "Creating modules or packages." },
             { "useCase": "Bootstrapping new smart contracts." },
-            { "useCase": "Exploring with other blockchains and platforms." },
+            { "useCase": "Exploring devlopment on unfamiliar blockchains and platforms." },
             { "useCase": "Getting started quickly with up-to-date code that works." },
-            { "useCase": "Explaining standards, best practices and style guides with full example projects." },
+            { "useCase": "Explaining standards, best practices, and style guides with full example projects." },
             { "useCase": "Promoting new projects by letting users get started quickly and easily with one or more starter apps." },
         ],
         "installSection": {

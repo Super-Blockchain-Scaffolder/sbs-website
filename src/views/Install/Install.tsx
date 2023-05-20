@@ -106,7 +106,7 @@ const Install = () => {
                     {usageSection.title}
                 </h1>
                 <p className="mb-3 font-normal text-xl text-gray-400">
-                    See the <Link to="/scaffold">scaffold</Link> page for information on how to use the sbs cli tool to sacffold new projects!
+                    See the <Link to="/scaffold">scaffold</Link> page for information on how to use the sbs cli tool to scaffold new projects!
                 </p>
 
             </div>
@@ -131,7 +131,7 @@ const Install = () => {
                     Uninstall
                 </h1>
                 <p className="mb-3 font-normal text-xl text-gray-400">
-                    The sbs cli tool can be uninstalled with the the npm uninstall command.
+                    The sbs cli tool can be uninstalled with npm's uninstall command.
                 </p>
                 <pre className="one-line-install max-w-fit m-auto">
                     npm uninstall -g sbs-cli

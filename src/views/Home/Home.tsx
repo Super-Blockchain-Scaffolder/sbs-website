@@ -27,21 +27,12 @@ const Home = () => {
                     {secondSection.title}
                 </h1>
                 <br />
-
-                {/* <img src="assets/scaffolding-people.png" /> */}
-
                 <img src="scaffolding-people.png" className="m-auto" />
-                {/* <img src="react.svg" /> */}
-                {/* <img src="assets/react.svg" /> */}
-                {/* <p className="mb-3 font-normal text-gray-400">
-                    {blurbUnderMainTitle}
-                </p> */}
-
             </div>
 
             <br />
 
-            <p className="text-xl p-2"><Link to="/install">Install</Link> the sbs cli, <Link to="/search">find</Link> a starter project for you, <Link to="/scaffold">scaffold</Link> it out, and start developing!</p>
+            <p className="text-xl p-2 text-gray-400"><Link to="/install">Install</Link> the sbs cli, <Link to="/search">find</Link> a starter project for you, <Link to="/scaffold">scaffold</Link> it out, and start developing!</p>
 
             <br />
 

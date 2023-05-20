@@ -9,6 +9,7 @@ const Search = () => {
     let [filteredStarterTemplates, setFilteredStarterTemplates]: [any, any] = useState([])
     let [searchInputText, setSearchInputText]: [any, any] = useState('')
     let [lastSubmittedSearchText, setLastSubmittedSearchText]: [any, any] = useState('')
+    let [masterListHasLoaded, setMasterListHasLoaded]: [any, any] = useState(false)
 
     useEffect(() => {
 
@@ -22,6 +23,7 @@ const Search = () => {
                 setSbsAllStarterTemplates(data["starter-templates"]);
                 setFilteredStarterTemplates(data["starter-templates"]);
                 setSbsMasterListData(data);
+                setMasterListHasLoaded(true);
             })
             .catch(err => {
                 console.log('error: ', err)
@@ -109,7 +111,7 @@ const Search = () => {
             })}
 
             {/* Not Results From Search */}
-            {filteredStarterTemplates.length == 0 && <div>
+            {masterListHasLoaded && filteredStarterTemplates.length == 0 && <div>
                 <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
 
                     <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
@@ -117,6 +119,17 @@ const Search = () => {
                     </h1>
                     <p className="mb-3 font-normal text-2xl text-gray-400">
                         It seems that there are no starter templates with the phrase "{lastSubmittedSearchText}" in either the name or the description...
+                    </p>
+                </div>
+                <br />
+            </div>
+            }
+            
+            {/* Not Yet Loaded */}
+            {!masterListHasLoaded && <div>
+                <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
+                    <p className="mb-3 font-normal text-2xl text-gray-400">
+                        Still loading starters master list...
                     </p>
                 </div>
                 <br />

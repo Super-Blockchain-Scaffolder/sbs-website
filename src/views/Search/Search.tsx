@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { FormEvent, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import YAML from 'yaml'
 
@@ -31,6 +31,14 @@ const Search = () => {
 
     }, [])
 
+    function handleSubmitSearch(e: FormEvent<HTMLFormElement>) {
+    
+        e.preventDefault();
+
+        console.log(`Form submitted, ${e}`);    
+
+    }
+
     return (
         <>
             {/* Top Section(s) */}
@@ -46,7 +54,7 @@ const Search = () => {
             <br />
             {/* Top Section(s) */}
             <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-2xl">
-                <form>
+                <form onSubmit = {(e) => handleSubmitSearch(e)}>
                     <label htmlFor="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div className="relative">
                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">

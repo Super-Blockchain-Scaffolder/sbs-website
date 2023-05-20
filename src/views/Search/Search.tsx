@@ -100,10 +100,10 @@ const Search = () => {
                             {starterTemplate["description"]}
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
-                            Maintainers: {starterTemplate["maintainers"]}
+                            Maintainers: {starterTemplate["maintainers"].join(', ')}
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
-                            Tags: {starterTemplate["tags"]}
+                            Tags: {starterTemplate["tags"].join(', ')}
                         </p>
                     </div>
                     <br />

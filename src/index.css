@@ -37,6 +37,7 @@ body {
   place-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #252525;
 }
 
 h1 {

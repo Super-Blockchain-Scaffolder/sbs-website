@@ -10,7 +10,7 @@ const Footer = () => {
                 {mainTitle}
             </h1> */}
             <p className="my-1 font-normal text-xl text-gray-700 dark:text-gray-400">
-                Copyright 2023  Blockchain Super Scaffolder
+                Copyright 2023  Super Blockchain Scaffolder
             </p>
 
         </div>

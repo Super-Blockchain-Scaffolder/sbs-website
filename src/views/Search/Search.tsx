@@ -39,7 +39,7 @@ const Search = () => {
                     Search
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-700 dark:text-gray-400">
-                    Explore the various Blockchain Super Scaffolder starters here or <Link to="/contribute">create your own</Link>!
+                    Explore the various Super Blockchain Scaffolder starters here or <Link to="/contribute">create your own</Link>!
                 </p>
             </div>
 

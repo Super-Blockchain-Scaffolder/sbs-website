@@ -1,8 +1,8 @@
 
 export default {
     "homeView": {
-        "mainTitle": "Blockchain Super Scaffolder",
-        "blurbUnderMainTitle": "The Blockchain Super Scaffolder is a free, easy-to-use command line tool for scaffolding loads of cool blockchain projects!",
+        "mainTitle": "Super Blockchain Scaffolder",
+        "blurbUnderMainTitle": "The Super Blockchain Scaffolder is a free, easy-to-use command line tool for scaffolding loads of cool blockchain projects!",
         "secondSection": {
             "title": "The modern scaffolding tool for blockchain projects!",
             "description": ""
@@ -16,11 +16,11 @@ export default {
     "installPage": {
         "topSection": {
             "title": "Getting Started",
-            "descriptionP1": "The Blockchain Super Scaffolder is an easy to use command line utility for scaffolding blockchain projects.",
-            "descriptionP2": "The Blockchain Super Scaffolder is language agnostic. It can scaffold projects of any programming language and any platform!",
-            "descriptionP3": "The Blockchain Super Scaffolder works on MacOS, Windows, Linux, and embedded systems.",
+            "descriptionP1": "The Super Blockchain Scaffolder is an easy to use command line utility for scaffolding blockchain projects.",
+            "descriptionP2": "The Super Blockchain Scaffolder is language agnostic. It can scaffold projects of any programming language and any platform!",
+            "descriptionP3": "The Super Blockchain Scaffolder works on MacOS, Windows, Linux, and embedded systems.",
         },
-        "useCasesTitle": "The Blockchain Super Scaffolder is great for:",
+        "useCasesTitle": "The Super Blockchain Scaffolder is great for:",
         "useCases": [
             { "useCase": "Rapidly create a new project." },
             { "useCase": "Creating modules or packages." },
@@ -46,7 +46,7 @@ export default {
     "scaffoldPage": {
         "topSection": {
             "title": "Scaffolding New Projects With SBS",
-            "descriptionP1": "Info on how to use the Blockchain Super Scaffolder cli tool.",
+            "descriptionP1": "Info on how to use the Super Blockchain Scaffolder cli tool.",
         },
         "checkInstallationSection": {
             "title": "Check Installation",

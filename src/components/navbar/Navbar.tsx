@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className="NavBar">
             <h5>
-                <Link to="/">Blockchain Super Scaffolder</Link>
+                <Link to="/">Super Blockchain Scaffolder</Link>
             </h5>
             <ul className='nav-links'>
                 <li><Link to="/install">Install</Link></li>

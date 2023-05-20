@@ -1,4 +1,4 @@
-# Blockchain Super Scaffolder Website
+# Super Blockchain Scaffolder Website
 
 The source code of the sbs-cli website: sbs-cli.org
 
@@ -16,7 +16,7 @@ See something in this website that seems off? Feel free to open issues and / or 
 
 ### 0) Clone this repo
 ```sh
-git clone git@github.com:Blockchain-Super-Scaffolder/sbs-website.git
+git clone git@github.com:Super-Blockchain-Scaffolder/sbs-website.git
 ```
 
 <br/>

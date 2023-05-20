@@ -88,12 +88,12 @@ const Search = () => {
             {(filteredStarterTemplates).map((starterTemplate: any, index: number) => {
 
                 return (<div key={"starter-template-" + index}>
-                    <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
+                    <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl break-words">
 
                         <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
                             {starterTemplate['name'] ? starterTemplate['name'] : ''}
                         </h1>
-                        <p className="mb-3 font-normal text-2xl text-gray-400">
+                        <p className="mb-3 font-normal text-2xl text-gray-400 break-all">
                             <a href={starterTemplate['repo-url'] ? starterTemplate['repo-url'] : ''}>{starterTemplate['repo-url'] ? starterTemplate['repo-url'] : ''}</a>
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">

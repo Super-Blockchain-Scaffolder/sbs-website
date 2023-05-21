@@ -36,7 +36,7 @@ const Scaffold = () => {
                     {checkInstallationSection.description}
                 </p>
                 <pre className="my-4 one-line-install max-w-fit m-auto">
-                    sbs --version
+                    sbs -v
                 </pre>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
                     If a verson number is printed to the console, you're good to go! 👍

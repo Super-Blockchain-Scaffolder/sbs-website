@@ -38,11 +38,11 @@ const Home = () => {
 
             <div className="block text-left p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">
                 <h2 className="mb-5 mt-2 text-center text-xl font-bold tracking-tight text-white">
-                    One-line install using <a href='https://npmjs.com'>npm</a>:
+                    One-line install using <a href='https://www.npmjs.com/package/sbs-cli'>npm</a>:
                 </h2>
 
                 <pre className="one-line-install max-w-fit m-auto">
-                    npm i -g sbs
+                    npm i -g sbs-cli
                 </pre>
 
             </div>

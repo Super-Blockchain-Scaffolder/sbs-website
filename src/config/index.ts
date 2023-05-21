@@ -50,7 +50,7 @@ export default {
         },
         "checkInstallationSection": {
             "title": "Check Installation",
-            "description": "Before continuing, please check that you have the sbs cli tool installed. One simple way to do this by running it with the --version flag.",
+            "description": "Before continuing, please check that you have the sbs cli tool installed. One simple way to do this by running it with the --version flag (or its shorthand -v).",
         },
     },
     "company": {

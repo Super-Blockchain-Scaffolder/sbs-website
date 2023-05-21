@@ -75,7 +75,7 @@ const Install = () => {
             {/* One-line Install Section */}
             <div className="block text-center p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">
                 <h2 className="mb-5 mt-2 text-xl font-bold tracking-tight text-white">
-                    One-line install using <a href='https://npmjs.com'>npm</a>:
+                    One-line install using <a href='https://www.npmjs.com/package/sbs-cli'>npm</a>:
                 </h2>
                 <pre className="one-line-install max-w-fit m-auto">
                     npm i -g sbs-cli
@@ -122,8 +122,8 @@ const Install = () => {
                     See the <Link to="/contribute">contribute</Link> page for information on contributing back to the project and adding more starters!
                 </p>
             </div>
-            
-            <br/>
+
+            <br />
 
             {/* Uninstall */}
             <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-xl">

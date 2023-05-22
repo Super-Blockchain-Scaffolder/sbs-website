@@ -27,7 +27,7 @@ const Home = () => {
                     {secondSection.title}
                 </h1>
                 <br />
-                <img src="scaffolding-people.png" className="m-auto" />
+                <img src="scaffolding-people.png" className="m-auto rounded-3xl" />
             </div>
 
             <br />

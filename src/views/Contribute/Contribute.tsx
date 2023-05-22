@@ -98,17 +98,10 @@ const Contribute = () => {
                     Contribute To This Website
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
-                    This website is completely open-source with source code hosted in the <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-website">sbs-website repository</a>.
-                    {/* We love open-source! We value and appreciate all the feedback and help we can get so please don't be shy! */}
+                    This website is a completely open-source React/Vite project with source code hosted in the <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-website">sbs-website repository</a>.
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
-                    The site is built with modern frontend tools like Vite, React, TypeScript, Tailwind, Eslint, etc...
-                </p>
-                <p className="mb-3 font-normal text-2xl text-gray-400">
-                    We'd love more contributors and will take all the help we can get! 🙏
-                </p>
-                <p className="mb-3 font-normal text-2xl text-gray-400">
-                    Feel free to open pull requests and / or issues describing your ideas for improving the site!
+                    Check out the <a href="https://github.com/orgs/Super-Blockchain-Scaffolder/projects/2">sbs-website list of things todo</a> for ideas on things you could work on, and don't be afraid to <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-website/issues">open an issue for the sbs-website</a> if you have sbs-cli ideas and/or feedback on our website!
                 </p>
             </div>
 
@@ -119,18 +112,29 @@ const Contribute = () => {
                     Contribute To The CLI Tool Source Code
                 </h1>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
-                    The sbs cli tool is an open-source project built in Rust which lives in the <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-cli-tool">sbs-cli repository</a>.
+                    The sbs cli tool is an open-source project built in Rust which lives in the <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-cli">sbs-cli repository</a>.
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
-                    We have a pretty clear roadmap for features we want to add to the sbs cli, but we are always open to new ideas!
+                    Check out the <a href="https://github.com/orgs/Super-Blockchain-Scaffolder/projects/1">sbs-cli list of things todo</a> for ideas on things you could work on, and don't be afraid to <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-cli/issues">open an issue for the sbs-cli</a> if you have ideas and/or feedback on our cli tool!
+                </p>
+            </div>
+            <br />
+            
+            {/* Contributing To The Master List */}
+            <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
+                <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
+                    Contribute To The SBS Master List Project
+                </h1>
+                <p className="mb-3 font-normal text-2xl text-gray-400">
+                    In the steps above we covered how to add a new starter by adding the information about the new starter to the "sbs-master-list.yaml" file located in the <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-master-list">sbs-master-list repository</a>.
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
-                    Feel free to open pull requests and / or issues describing your ideas for improving the tool or just letting us know you'd like to contribute somehow!
+                    Check out the <a href="https://github.com/orgs/Super-Blockchain-Scaffolder/projects/3">sbs-master-list things todo</a> for ideas on things you could work on, and don't be afraid to <a href="https://github.com/Super-Blockchain-Scaffolder/sbs-master-list/issues">open an issue for the sbs-master-list</a> if you have ideas and/or feedback on how the sbs master list works!
                 </p>
             </div>
 
             <br />
-            {/* Contributing To The CLI Tool Source Code */}
+            {/* Spread The Word */}
             <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
                 <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
                     Spread The Word
@@ -140,6 +144,20 @@ const Contribute = () => {
                 </p>
                 <p className="mb-3 font-normal text-2xl text-gray-400">
                     Thanks for taking the time to check us out! 🙏
+                </p>
+            </div>
+
+            <br />
+            {/* History of SBS */}
+            <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">
+                <h1 className="mb-5 mt-2 text-4xl font-bold tracking-tight text-white">
+                    History of SBS
+                </h1>
+                <p className="mb-3 font-normal text-2xl text-gray-400">
+                    The Super Blockchain Scaffolder was born by two software engineers, <a href="https://github.com/JimLynchCodes">Jim Lynch</a> and <a href="https://github.com/ps428">Prananv Soni</a>, who came together and started this project during the Chainlink Spring 2023 hackathon.
+                </p>
+                <p className="mb-3 font-normal text-2xl text-gray-400">
+                    The Super Blockchain Scaffolder is meant to be a tool for blockchain developers, creators, authors, and everyone in between! Whether you are an experienced blockchain architect looking to kick off new projects quickly or a complete beginner wondering where to get started, sbs-cli is the tool for you!
                 </p>
             </div>
 

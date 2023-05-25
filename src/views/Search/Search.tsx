@@ -2,6 +2,8 @@ import React, { FormEvent, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import YAML from 'yaml'
 
+import { useSearchParams } from "react-router-dom";
+
 const Search = () => {
 
     let [sbsMasterListData, setSbsMasterListData]: [any, any] = useState({})
@@ -10,6 +12,7 @@ const Search = () => {
     let [searchInputText, setSearchInputText]: [any, any] = useState('')
     let [lastSubmittedSearchText, setLastSubmittedSearchText]: [any, any] = useState('')
     let [masterListHasLoaded, setMasterListHasLoaded]: [any, any] = useState(false)
+    let [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
 
@@ -24,25 +27,51 @@ const Search = () => {
                 setFilteredStarterTemplates(data["starter-templates"]);
                 setSbsMasterListData(data);
                 setMasterListHasLoaded(true);
+                console.log('search: ', JSON.stringify(searchParams))
+        
+                console.log("data ", JSON.stringify(data))
+
+                for (const [key, value] of searchParams.entries()) {
+        
+                    if (key === 's') {
+                        const searchTextDecoded = decodeURI(value);
+                        setSearchInputText(searchTextDecoded)
+                        resetFilterTemplates(searchTextDecoded, data["starter-templates"]);
+                    }
+        
+                    console.log("key ", key)
+                    console.log("value ", value)
+                }
+
             })
             .catch(err => {
                 console.log('error: ', err)
             })
 
+
     }, [])
 
     function handleSubmitSearch(e: FormEvent<HTMLFormElement>) {
 
+        setSearchParams([["s", encodeURI(searchInputText)]]);
+
         e.preventDefault();
 
-        setLastSubmittedSearchText(searchInputText);
+        resetFilterTemplates(searchInputText, sbsAllStarterTemplates);
 
-        const newFilteredTemplates = sbsAllStarterTemplates.filter((sbsStarterTemplate: any) => {
+    }
+
+    function resetFilterTemplates(text: string, fullList: any) {
+        setLastSubmittedSearchText(text);
+
+        console.log("full list: ", fullList)
+
+        const newFilteredTemplates = fullList.filter((sbsStarterTemplate: any) => {
 
             if (sbsStarterTemplate.name && sbsStarterTemplate.description) {
 
-                if (sbsStarterTemplate.name.toLowerCase().includes(searchInputText.toLowerCase()) ||
-                    sbsStarterTemplate.description.toLowerCase().includes(searchInputText.toLowerCase()))
+                if (sbsStarterTemplate.name.toLowerCase().includes(text.toLowerCase()) ||
+                    sbsStarterTemplate.description.toLowerCase().includes(text.toLowerCase()))
                     return sbsStarterTemplate
             }
 
@@ -63,6 +92,8 @@ const Search = () => {
                     Explore the various Super Blockchain Scaffolder starters here or <Link to="/contribute">create your own</Link>!
                 </p>
             </div>
+
+            {JSON.stringify(searchParams)}
 
             <br />
             {/* Top Section(s) */}
@@ -124,7 +155,7 @@ const Search = () => {
                 <br />
             </div>
             }
-            
+
             {/* Not Yet Loaded */}
             {!masterListHasLoaded && <div>
                 <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">

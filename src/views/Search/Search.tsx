@@ -27,9 +27,6 @@ const Search = () => {
                 setFilteredStarterTemplates(data["starter-templates"]);
                 setSbsMasterListData(data);
                 setMasterListHasLoaded(true);
-                console.log('search: ', JSON.stringify(searchParams))
-        
-                console.log("data ", JSON.stringify(data))
 
                 for (const [key, value] of searchParams.entries()) {
         
@@ -38,9 +35,7 @@ const Search = () => {
                         setSearchInputText(searchTextDecoded)
                         resetFilterTemplates(searchTextDecoded, data["starter-templates"]);
                     }
-        
-                    console.log("key ", key)
-                    console.log("value ", value)
+
                 }
 
             })
@@ -63,8 +58,6 @@ const Search = () => {
 
     function resetFilterTemplates(text: string, fullList: any) {
         setLastSubmittedSearchText(text);
-
-        console.log("full list: ", fullList)
 
         const newFilteredTemplates = fullList.filter((sbsStarterTemplate: any) => {
 
@@ -92,8 +85,6 @@ const Search = () => {
                     Explore the various Super Blockchain Scaffolder starters here or <Link to="/contribute">create your own</Link>!
                 </p>
             </div>
-
-            {JSON.stringify(searchParams)}
 
             <br />
             {/* Top Section(s) */}

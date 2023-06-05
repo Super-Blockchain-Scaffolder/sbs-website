@@ -2,6 +2,11 @@ import React, { FormEvent, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import YAML from 'yaml'
 
+type Maintainer = {
+    text: string,
+    link: string
+};
+
 const Search = () => {
 
     let [sbsMasterListData, setSbsMasterListData]: [any, any] = useState({})
@@ -100,7 +105,16 @@ const Search = () => {
                             {starterTemplate["description"]}
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
-                            Maintainers: {starterTemplate["maintainers"].join(', ')}
+                            Maintainers: &nbsp;
+                            
+                            {starterTemplate["maintainers"].map( (maintainer: Maintainer) => {
+
+                                return <a href={maintainer.link}>{maintainer.text}</a>
+
+                            })}
+                            
+                            
+                            {/* {starterTemplate["maintainers"].join(', ')} */}
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
                             Tags: {starterTemplate["tags"].join(', ')}

@@ -54,7 +54,8 @@ const Contribute = () => {
     live-url: 'url for a live site for your project (or same as github repo url)'
     description: 'A description of your project.'
     maintainers:
-    - 'Name, email, social handles, and / or other contact info'
+        - text: 'A human readable name'
+        - link: 'An email address or link to social media profile'
     tags:
     - 'Example Tag'
     - 'Another Example Tag'`}

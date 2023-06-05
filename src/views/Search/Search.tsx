@@ -6,6 +6,7 @@ type Maintainer = {
     text: string,
     link: string
 };
+import { useSearchParams } from "react-router-dom";
 
 const Search = () => {
 
@@ -15,6 +16,7 @@ const Search = () => {
     let [searchInputText, setSearchInputText]: [any, any] = useState('')
     let [lastSubmittedSearchText, setLastSubmittedSearchText]: [any, any] = useState('')
     let [masterListHasLoaded, setMasterListHasLoaded]: [any, any] = useState(false)
+    let [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
 
@@ -29,25 +31,44 @@ const Search = () => {
                 setFilteredStarterTemplates(data["starter-templates"]);
                 setSbsMasterListData(data);
                 setMasterListHasLoaded(true);
+
+                for (const [key, value] of searchParams.entries()) {
+
+                    if (key === 's') {
+                        const searchTextDecoded = decodeURI(value);
+                        setSearchInputText(searchTextDecoded)
+                        resetFilterTemplates(searchTextDecoded, data["starter-templates"]);
+                    }
+
+                }
+
             })
             .catch(err => {
                 console.log('error: ', err)
             })
 
+
     }, [])
 
     function handleSubmitSearch(e: FormEvent<HTMLFormElement>) {
 
+        setSearchParams([["s", encodeURI(searchInputText)]]);
+
         e.preventDefault();
 
-        setLastSubmittedSearchText(searchInputText);
+        resetFilterTemplates(searchInputText, sbsAllStarterTemplates);
 
-        const newFilteredTemplates = sbsAllStarterTemplates.filter((sbsStarterTemplate: any) => {
+    }
+
+    function resetFilterTemplates(text: string, fullList: any) {
+        setLastSubmittedSearchText(text);
+
+        const newFilteredTemplates = fullList.filter((sbsStarterTemplate: any) => {
 
             if (sbsStarterTemplate.name && sbsStarterTemplate.description) {
 
-                if (sbsStarterTemplate.name.toLowerCase().includes(searchInputText.toLowerCase()) ||
-                    sbsStarterTemplate.description.toLowerCase().includes(searchInputText.toLowerCase()))
+                if (sbsStarterTemplate.name.toLowerCase().includes(text.toLowerCase()) ||
+                    sbsStarterTemplate.description.toLowerCase().includes(text.toLowerCase()))
                     return sbsStarterTemplate
             }
 
@@ -106,15 +127,9 @@ const Search = () => {
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
                             Maintainers: &nbsp;
-                            
-                            {starterTemplate["maintainers"].map( (maintainer: Maintainer) => {
-
+                            {starterTemplate["maintainers"].map((maintainer: Maintainer) => {
                                 return <a href={maintainer.link}>{maintainer.text}</a>
-
                             })}
-                            
-                            
-                            {/* {starterTemplate["maintainers"].join(', ')} */}
                         </p>
                         <p className="mb-3 font-normal text-2xl text-gray-400">
                             Tags: {starterTemplate["tags"].join(', ')}
@@ -138,7 +153,7 @@ const Search = () => {
                 <br />
             </div>
             }
-            
+
             {/* Not Yet Loaded */}
             {!masterListHasLoaded && <div>
                 <div className="block p-6 border rounded-lg shadow bg-gray-800 border-gray-700 text-2xl">

@@ -1,6 +1,12 @@
 # Super Blockchain Scaffolder Website
 
-The source code of the sbs-cli website: sbs-cli.org
+The source code of the sbs-cli website.
+
+<br/>
+
+## Live Demo
+
+Check out the live site here: [https://sbs-cli.org](https://sbs-cli.org)
 
 <br/>
 
